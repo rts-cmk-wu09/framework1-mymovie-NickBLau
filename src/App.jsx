@@ -1,32 +1,47 @@
 import "./App.css";
-import HeadingOne from "./components/HeadingOne";
 import MovieCard from "./templates/MovieCard";
-import HeadingTwo from "./components/HeadingTwo";
+import PopularCard from "./templates/PopularCard";
 import SeeMoreButton from "./components/SeeMoreButton";
+import MovieGenreButton from "./components/MovieGenreButton";
+import Heading from "./components/Heading";
+import Switch from "./components/Switch";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <div className="App">
       <header className="gridContainer">
-        <HeadingOne />
+        <Heading title="MyMovies" size="16" as="h1" />
+        <Switch />
       </header>
       <main>
         <section>
           <div className="flexContainer space-between">
-            <HeadingTwo />
+            <Heading title="Now Showing" size="16" as="h2" />
             <SeeMoreButton />
           </div>
           <div className="flexContainer movieCardContainer">
             <MovieCard />
             <MovieCard />
             <MovieCard />
+            <MovieCard />
+            <MovieCard />
           </div>
         </section>
-        <section></section>
+        <section>
+          <div className="flexContainer space-between">
+            <Heading title="Popular" size="16" as="h2" />
+            <SeeMoreButton />
+          </div>
+          <PopularCard />
+          <PopularCard />
+          <PopularCard />
+          <PopularCard />
+          <PopularCard />
+          <PopularCard />
+        </section>
       </main>
-      <footer>
-        <nav></nav>
-      </footer>
+      <Footer />
     </div>
   );
 }
