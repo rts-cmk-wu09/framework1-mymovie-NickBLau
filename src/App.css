@@ -10,17 +10,24 @@ figure,
 p,
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   margin: 0;
   padding: 0;
 }
 h1,
-h2 {
+h2,
+h4 {
   font-family: "Merriweather", serif;
   color: #110e47;
 }
 h3 {
   font-weight: 700;
+}
+h5 {
+  color: #9c9c9c;
+  font-family: "Mulish", sans-serif;
 }
 .flexContainer {
   display: flex;
@@ -87,4 +94,47 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.test {
+  padding: 0;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+.border-radius {
+  border-radius: 100px;
+}
+
+.Heading {
+  width: 30px;
+}
+
+.trailer {
+  position: relative;
+  top: 100;
+  right: 100;
+}
+
+.text-align {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.return-home {
+  color: blue;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+}
+
+.font-size {
+  font-size: 1.5rem;
 }
