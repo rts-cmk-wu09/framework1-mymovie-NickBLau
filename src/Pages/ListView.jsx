@@ -1,4 +1,4 @@
-import MovieCard from "../templates/MovieCard";
+import NowShowing from "../templates/NowShowing";
 import PopularCard from "../templates/PopularCard";
 import SeeMoreButton from "../components/SeeMoreButton";
 import MovieGenreButton from "../components/MovieGenreButton";
@@ -20,13 +20,7 @@ function App() {
             <SeeMoreButton />
           </div>
           <div className="flexContainer movieCardContainer">
-            <Link to="/details/1">
-              <MovieCard />
-            </Link>
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
+            <NowShowing />
           </div>
         </section>
         <section>

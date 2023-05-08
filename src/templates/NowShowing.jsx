@@ -10,7 +10,7 @@ const StyledArticle = styled.article`
   justify-content: space-between;
 `;
 
-const MovieCard = () => {
+const NowShowing = () => {
   return (
     <StyledArticle>
       <figure>
@@ -22,4 +22,4 @@ const MovieCard = () => {
   );
 };
 
-export default MovieCard;
+export default NowShowing;
