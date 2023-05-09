@@ -1,4 +1,4 @@
-import MovieCard from "../templates/MovieCard";
+import NowShowing from "../templates/NowShowing";
 import PopularCard from "../templates/PopularCard";
 import SeeMoreButton from "../components/SeeMoreButton";
 import MovieGenreButton from "../components/MovieGenreButton";

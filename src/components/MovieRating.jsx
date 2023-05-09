@@ -12,11 +12,11 @@ const StyledDiv = styled.div`
   display: flex;
 `;
 
-const MovieRating = () => {
+const MovieRating = (props) => {
   return (
     <StyledDiv>
       <StyledFaStar />
-      <StyledP>9.1/10 IMDb</StyledP>
+      <StyledP>{props.voteAverage}/10 IMDb</StyledP>
     </StyledDiv>
   );
 };
