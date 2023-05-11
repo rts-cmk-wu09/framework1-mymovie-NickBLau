@@ -14,10 +14,11 @@ const StyledArticle = styled.article`
 `;
 
 const PopularCard = () => {
-  const MovieCardData = useLoaderData();
+  const MovieData = useLoaderData();
+
   return (
     <>
-      {MovieCardData.results.map((data) => (
+      {MovieData.popular.map((data) => (
         <Link to={`details/${data.id}`} key={data.id}>
           <StyledArticle>
             <figure className="Popular-Image">
@@ -51,13 +52,5 @@ const PopularCard = () => {
     </>
   );
 };
-
-export async function loader() {
-  const res = await fetch(
-    "https://api.themoviedb.org/3/movie/popular/?api_key=bc0c5dcad170ade974a8b9ae1a2ba651"
-  );
-  const data = await res.json();
-  return data;
-}
 
 export default PopularCard;

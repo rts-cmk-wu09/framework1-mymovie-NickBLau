@@ -10,12 +10,13 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
+import { listViewData } from "./Pages/ListView";
 import { loader as MovieCardDataLoader } from "./templates/NowShowing";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />} errorElement={<ErrorView />}>
-      <Route index loader={MovieCardDataLoader} element={<ListView />} />
+      <Route index loader={listViewData} element={<ListView />} />
       <Route path="/details/:id" element={<DetailView />} />
     </Route>
   )

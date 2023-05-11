@@ -7,7 +7,7 @@ import Image from "../components/Image";
 import Hero from "../components/Hero";
 import Heading from "../components/Heading";
 import Switch from "../components/Switch";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 import Castpic from "../components/CastImage";

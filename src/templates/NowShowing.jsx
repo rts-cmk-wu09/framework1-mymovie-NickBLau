@@ -12,11 +12,11 @@ const StyledArticle = styled.article`
 `;
 
 const NowShowing = () => {
-  const MovieCardData = useLoaderData();
-  console.log(MovieCardData);
+  const MovieData = useLoaderData();
+  console.log(MovieData);
   return (
     <>
-      {MovieCardData.results.map((data) => (
+      {MovieData.nowShowing.map((data) => (
         <Link to={`details/${data.id}`} key={data.id}>
           <StyledArticle>
             <figure>
