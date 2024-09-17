@@ -4,6 +4,7 @@ import MovieRating from "../components/MovieRating";
 import Heading from "../components/Heading";
 import MovieGenreButton from "../components/MovieGenreButton";
 import RunTime from "../components/RunTime";
+import ReleaseDate from "../components/ReleaseDate";
 import { Link, useLoaderData } from "react-router-dom";
 
 const StyledArticle = styled.article`
@@ -44,7 +45,7 @@ const PopularCard = () => {
                 <MovieGenreButton />
                 <MovieGenreButton />
               </div>
-              <RunTime />
+              <ReleaseDate ReleaseDate={data.release_date} />
             </div>
           </StyledArticle>
         </Link>

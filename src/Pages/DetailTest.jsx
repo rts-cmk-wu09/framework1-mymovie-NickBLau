@@ -1,14 +1,6 @@
 import styled, { css } from "styled-components";
-
-import SeeMoreButton from "../components/SeeMoreButton";
-import MovieGenreButton from "../components/MovieGenreButton";
-import MovieRating from "../components/MovieRating";
-import Hero from "../components/Hero";
-import Heading from "../components/Heading";
-import { BsArrowLeft } from "react-icons/bs";
-import { FaRegBookmark, FaPlayCircle } from "react-icons/fa";
-import Cast from "../components/Cast";
 import Switch from "../components/Switch";
+import { FaArrowLeft, FaPlay } from "react-icons/fa";
 import { Link, useLoaderData } from "react-router-dom";
 import axios from "axios";
 
@@ -17,7 +9,7 @@ const StyledHeader = styled.header`
   grid-template-columns: 2;
   height: 232px;
 `;
-const StyledBsArrowLeft = styled(BsArrowLeft)`
+const StyledFaArrowLeft = styled(FaArrowLeft)`
   position: relative; /* fix z position on safari mobile */
   color: #fff;
   grid-column-start: 1;
@@ -27,7 +19,7 @@ const StyledBsArrowLeft = styled(BsArrowLeft)`
 `;
 const StyledIframe = styled.iframe`
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 3;
   grid-row-start: 1;
 `;
 const StyledSwitch = styled(Switch)`
@@ -57,15 +49,15 @@ const DetailsView = () => {
           height="100%"
           src={`https://www.youtube-nocookie.com/embed/${DetailData.details.videos.results[0].key}`}
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></StyledIframe>
         <StyledBsArrowLeft />
         <StyledSwitch justify="end" align="top" />
       </StyledHeader>
       <div>
-        {/* <div className="flexContainer space-between">
+        <div className="flexContainer space-between">
           <Link to="/">
             <BsArrowLeft />
           </Link>
@@ -76,7 +68,7 @@ const DetailsView = () => {
         <div className="trailer">
           <FaPlayCircle />
           <p>Play Trailer</p>
-        </div> */}
+        </div>
 
         <div className="flexContainer space-between margin-top border-radius">
           <Heading title="Spiderman: No Way Home" size="16" as="h1" />

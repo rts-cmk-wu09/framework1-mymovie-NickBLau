@@ -2,8 +2,8 @@ import styled from "styled-components";
 import CastTemp from "../assets/CastTemp.png";
 
 const StyledImg = styled.img`
-  width: 72px;
-  height: 72px;
+  width: 140px;
+  height: 140px;
 `;
 
 const CastImage = () => {

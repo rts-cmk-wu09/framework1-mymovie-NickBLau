@@ -40,10 +40,14 @@ const ListView = () => {
   );
 };
 
-export const listViewData = async () => {
+export const ListViewData = async () => {
   return await Promise.allSettled([
-    await axios("https://api.themoviedb.org/3/movie/now_playing/?api_key="),
-    await axios("https://api.themoviedb.org/3/movie/popular/?api_key="),
+    await axios(
+      "https://api.themoviedb.org/3/movie/now_playing/?api_key=bc0c5dcad170ade974a8b9ae1a2ba651"
+    ),
+    await axios(
+      "https://api.themoviedb.org/3/movie/popular/?api_key=bc0c5dcad170ade974a8b9ae1a2ba651"
+    ),
   ]).then((values) => {
     console.log("Value: ", values);
     return {

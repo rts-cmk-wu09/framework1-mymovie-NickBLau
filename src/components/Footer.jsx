@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BsBookmark, BsTicket } from "react-icons/bs";
+import { BsBookmark, BsTicket } from "react-icons/Bs";
 import { FcFilmReel } from "react-icons/Fc";
 
 const StyledBsTicket = styled(BsTicket)`
